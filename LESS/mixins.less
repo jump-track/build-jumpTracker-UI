@@ -1,0 +1,24 @@
+//Variables
+// BG-Background
+// FC-Font Color
+// BC-Border Color
+
+.test(@testColor: red;){
+    border: 1px solid @testColor;
+}
+
+.BUILD(@buildBC: @testBC; @buildBG: @testBG; @buildHeight: @testHeight;){
+    width: 100%;
+    height: @buildHeight;
+    border: 1px solid @buildBC;
+    background: @buildBG;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
