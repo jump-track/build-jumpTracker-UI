@@ -1,0 +1,31 @@
+.content{
+    .BUILD(@testBC; @contentBG; @contentHeight);
+    width: 95vw;
+    display: flex;
+    .container{
+        width: 60%;
+    }
+    h2 {
+        font-size: 2em;
+        color: white;
+        padding: 2%;
+    }
+    ul {
+        padding: 1% 5%;
+    }
+    li {
+        padding-left:7.5%;
+        list-style: none;
+        line-height: 1.25;
+    }
+    .split1{
+        width: 100%;
+    }
+    .split2{
+        position: absolute;
+        right: 0;
+        width: 35%;
+        height: 87.5vh;
+        background: @contentSplitBG;
+    }
+}
