@@ -4,7 +4,7 @@
 // BC-Border Color
 
 .test(@testColor: red;){
-    border: 1px solid @testColor;
+    border: 1px solid @testBC;
 }
 
 .BUILD(@buildBC: @testBC; @buildBG: @testBG; @buildHeight: @testHeight;){
@@ -12,7 +12,6 @@
     height: @buildHeight;
     border: 1px solid @buildBC;
     background: @buildBG;
-    opacity: 0.5;
 }
 
 

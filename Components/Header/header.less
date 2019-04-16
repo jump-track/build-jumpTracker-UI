@@ -1,9 +1,18 @@
 .header {
-    .BUILD(@testBC; @testBG; @headerHeight);
+    .BUILD(@testBC; @headerBG; @headerHeight);
+    width: 95vw;
+    div {
+        width: 100%;
+        column-count: 2;
+        column-fill: auto;
+    }
     h2 {
-        padding: 1%;
         font-size: 2em;
-        text-align: center;
         color: white;
+        padding: 5% 2%;
+    }
+    p {
+        padding: 2% 5%;
+        line-height: 1.5;
     }
 }

@@ -1,0 +1,63 @@
+.landing {
+    .test(black);
+    width: 95vw;
+    height: 85vh;
+    margin-top: @navHeight;
+    background-image: url('/Assets/img/bg2.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.boxes{
+    .test();
+    width: 65vw;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+}
+.boxLarge {
+    .test();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 60vh;
+    background: @landingLargeBox;
+    text-align: center;
+    opacity: 0.9;
+    h2 {
+        font-size: 4em; 
+        color: @landingMedBox2;
+        padding-bottom: 2.5%;
+    }
+    h3{
+        font-size: 2em;
+        color: white;
+        padding: 0 5%;
+    }
+
+}
+.boxRow {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+.boxMedium {
+    .test();
+    width: 25vw;
+    height: 15vh;
+    display: flex;
+    background: @landingMedBox1;
+}
+.boxMedium2 {
+    .test();
+    width: 25vw;
+    height: 15vh;
+    background: @landingMedBox2;
+}
+.boxSmall {
+    .test();
+    width: 7.5vw;
+    height: 15vh;
+    background: @landingSmallBox;
+}
