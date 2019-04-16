@@ -1,11 +1,16 @@
 .aboutUs{
     .BUILD(@aboutUsBG; @aboutUsHeight);
     width: 95vw;
-    overflow: auto;
+    @media @mobile{height: auto;}
     display: flex;
     flex-direction: row-reverse;
+    @media @mobile{flex-direction: column}
     .container{
         width: 60vw;
+        overflow: auto;
+        padding-bottom: 5%;
+        @media @mobile{width: 100%;}
+        @media @mobile{height: 88vh;}
     }
     h2 {
         font-size: 5vw;
@@ -22,10 +27,14 @@
     }
     .split1{
         width: 100%;
+        @media @mobile{height: 88vh;}
+        @media @mobile{width: 80%;}
     }
     .split2{
         width: 40vw;
-        height: @contentHeight;
+        height: auto;
+        @media @mobile{height: 88vh;}
+        @media @mobile{width: 100%;}
         background: @aboutUsSplitBG;
     }
 }

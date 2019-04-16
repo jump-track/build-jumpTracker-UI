@@ -1,8 +1,9 @@
 .cta {
     .BUILD(@ctaBG; @ctaHeight);
     width: 95vw;
-    overflow: auto;
+    @media @mobile{height: auto;}
     display: flex;
+    @media @mobile{flex-direction: column;}
     h2, h3, h4 {
         text-align: center;
         font-size: 3.5vw;
@@ -14,6 +15,9 @@
     }
     .container {
         width: 50%;
+        @media @mobile{width: 100%;}
+        @media @mobile{height: 88vh;}
+        overflow: auto;
         padding-bottom: 5%;
         h3{
             font-size: 1.5em;
@@ -30,8 +34,10 @@
     }
     .container2 {
         width: 50%;
+        @media @mobile{width: 100%;}
+        @media @mobile{height: 88vh;}
+        overflow: auto;
         background: @mercury;
-        height: auto;
         h3{
             font-size: 1.5em;
             text-align: center;

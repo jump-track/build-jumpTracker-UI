@@ -1,10 +1,12 @@
 .content{
     .BUILD(@contentBG; @contentHeight);
     width: 95vw;
-    overflow: auto;
     display: flex;
     .container{
         width: 60%;
+        @media @mobile{width: 70%;}
+        overflow: auto;
+        padding-bottom: 5%;
     }
     h2 {
         font-size: 5vw;
@@ -16,14 +18,18 @@
     }
     li {
         padding-left:7.5%;
+        @media @mobile{padding-left: 10%;}
         list-style: none;
         line-height: 1.25;
     }
     .split1{
         width: 100%;
+        @media @mobile{width: 70%;}
+        @media @mobile{padding: 5%;}
     }
     .split2{
         width: 40vw;
+        @media @mobile{width: 30%;}
         height: @contentHeight;
         background: @contentSplitBG;
     }
