@@ -2,6 +2,7 @@
 html {
     position: relative;
     scroll-behavior: smooth;
+    background: rgba(228, 233, 237, 1);
 }
 body {
     overflow: scroll;
@@ -15,7 +16,7 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    .container {
+    .tabs {
         position: relative;
         width: 100vw;
         height: 88vh;
@@ -25,3 +26,18 @@ body {
         @media @mobile{margin-top: 20vh;}
     }
 }
+
+
+ @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  
