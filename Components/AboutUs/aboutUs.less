@@ -1,10 +1,11 @@
-.content{
-    .BUILD(@contentBG; @contentHeight);
+.aboutUs{
+    .BUILD(@aboutUsBG; @aboutUsHeight);
     width: 95vw;
     overflow: auto;
     display: flex;
+    flex-direction: row-reverse;
     .container{
-        width: 60%;
+        width: 60vw;
     }
     h2 {
         font-size: 5vw;
@@ -25,6 +26,6 @@
     .split2{
         width: 40vw;
         height: @contentHeight;
-        background: @contentSplitBG;
+        background: @aboutUsSplitBG;
     }
 }
