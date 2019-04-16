@@ -1,6 +1,7 @@
 
 html {
     position: relative;
+    scroll-behavior: smooth;
 }
 body {
     overflow: scroll;
@@ -15,7 +16,12 @@ body {
     height: auto;
     margin: 0 auto;
     .container {
+        position: relative;
         width: 100vw;
-        height: auto;
+        height: 88vh;
+        @media @mobile{ height: 80vh;}
+        overflow: hidden;
+        margin-top: 12vh;
+        @media @mobile{margin-top: 20vh;}
     }
 }

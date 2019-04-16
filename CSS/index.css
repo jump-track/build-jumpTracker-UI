@@ -128,6 +128,7 @@ table {
 }
 html {
   position: relative;
+  scroll-behavior: smooth;
 }
 body {
   overflow: scroll;
@@ -145,13 +146,26 @@ body ::-webkit-scrollbar {
   /* Optional: just make scrollbar invisible */
 }
 body .container {
+  position: relative;
   width: 100vw;
-  height: auto;
+  height: 88vh;
+  overflow: hidden;
+  margin-top: 12vh;
+}
+@media (max-width: 600px) {
+  body .container {
+    height: 80vh;
+  }
+}
+@media (max-width: 600px) {
+  body .container {
+    margin-top: 20vh;
+  }
 }
 .navi {
   height: 12vh;
   background: #eeeeee;
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
@@ -221,7 +235,7 @@ body .container {
 }
 .sideNavi {
   background: #6c7a89;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,11 +270,11 @@ body .container {
 }
 .landing {
   width: 95vw;
-  height: 88vh;
-  margin-top: 12vh;
+  height: 89vh;
   background-image: url('/Assets/img/bg2.jpg');
   background-size: cover;
-  position: relative;
+  position: absolute;
+  z-index: 2;
 }
 .boxes {
   width: 65vw;
@@ -314,8 +328,8 @@ body .container {
   height: 89vh;
   background: #abb7b7;
   width: 95vw;
-  padding-bottom: 5%;
   overflow: auto;
+  position: absolute;
 }
 .header div {
   padding: 1%;
@@ -337,6 +351,7 @@ body .container {
   background: #95a5a6;
   width: 95vw;
   display: flex;
+  position: absolute;
 }
 .content .container {
   width: 60%;
@@ -395,6 +410,7 @@ body .container {
   background: #bdc3c7;
   width: 95vw;
   display: flex;
+  position: absolute;
 }
 @media (max-width: 600px) {
   .cta {
@@ -486,6 +502,7 @@ body .container {
   width: 95vw;
   display: flex;
   flex-direction: row-reverse;
+  position: absolute;
 }
 @media (max-width: 600px) {
   .aboutUs {
@@ -555,8 +572,9 @@ body .container {
 }
 .footer {
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   background: #2e3131;
+  width: 100vw;
   color: white;
   text-align: center;
   display: flex;
