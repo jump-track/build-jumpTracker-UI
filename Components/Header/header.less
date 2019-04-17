@@ -1,17 +1,13 @@
 .header {
     .BUILD(@headerBG; @headerHeight);
-    width: 95vw;
-    @media @mobile{width:90vw;}
+    width: 65vw;
     overflow: auto;
     position: absolute;
-    justify-content: center;
     @media @mobile{justify-content: flex-start;}
+    @media @mobile{height: 65vh;}
+    @media @tablet{width: 80vw;}
     display: flex;
     flex-direction: column;
-    @media @tablet{padding: 5% 0;}
-    @media @tablet{height: 88vh;}
-    @media @mobile{height: 80vh;}
-    @media @mobile{padding: 10% 0;}
     div {
         padding: 1%;
     }
@@ -25,5 +21,6 @@
         padding: 1% 5%;
         line-height: 1.5;
         font-size: 1em;
+        @media @mobile{padding-bottom: 25%;}
     }
 }

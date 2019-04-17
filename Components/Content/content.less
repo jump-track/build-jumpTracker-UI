@@ -1,24 +1,23 @@
 .content{
     .BUILD(@contentBG; @contentHeight);
-    width: 95vw;
-    @media @tablet{height: 88vh;}
-    @media @mobile{height: 80vh;}
+    width: 65vw;
+    @media @tablet{width: 80vw;}
+    @media @mobile{height: 65vh;}
     display: flex;
     position: absolute;
     .container{
-        width: 60%;
+        width: 100%;
         @media @mobile{width: 70%;}
         overflow: auto;
-        justify-content: center;
         @media @mobile{justify-content: flex-start;}
         display: flex;
         flex-direction: column;
         @media @mobile{padding: 10% 0;}
     }
     h2 {
-        font-size: 3vw;
+        font-size: 3em;
         color: white;
-        padding: 2%;
+        padding: 1% 2%;
     }
     ul {
         padding: 1% 5%;
@@ -31,15 +30,12 @@
     }
     .split1{
         width: 100%;
-        @media @mobile{width: 70%;}
-        @media @mobile{padding: 5%;}
-        @media @mobile{margin-bottom: 5%;}
- 
     }
     .split2{
         width: 40vw;
-        @media @mobile{width: 30%;}
+        @media @mobile{display:none;}
         height: @contentHeight;
         background: @contentSplitBG;
+        opacity: .8;
     }
 }
