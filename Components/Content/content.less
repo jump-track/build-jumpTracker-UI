@@ -1,10 +1,10 @@
 .content{
     .BUILD(@contentBG; @contentHeight);
     width: 65vw;
+    @media @tablet{width: 80vw;}
     @media @mobile{height: 65vh;}
     display: flex;
     position: absolute;
-    overflow: auto;
     .container{
         width: 100%;
         @media @mobile{width: 70%;}

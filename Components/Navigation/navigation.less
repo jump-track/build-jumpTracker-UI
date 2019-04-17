@@ -22,6 +22,7 @@
         }
         a {
             text-decoration: none;
+            cursor: initial;
         }
         h1{
            font-size: 3vw;
@@ -63,8 +64,8 @@
     width: 5vw;
     @media @tablet{width: 100vw;}
     padding-top: @navHeight;
-    @media @tablet{padding: 0;}
     padding-bottom: 5vh;
+    @media @tablet{padding: 0;}
     position: fixed;
     right: 0;
     @media @tablet{right: initial;}
@@ -75,9 +76,15 @@
         color: @sideNaviFC;
         writing-mode: vertical-rl;
         @media @tablet{writing-mode: initial;}
+        @media @mobile{font-size: 3.5vw;}
 
     }
     .hamburger {
         writing-mode: horizontal-tb;
+        .logo {
+            width: 6vh;
+            height: auto;
+        }
+       
     }
 }

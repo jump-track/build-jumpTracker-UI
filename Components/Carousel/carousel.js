@@ -17,7 +17,6 @@ class Carousel {
         this.nextButton.addEventListener('click', this.changeNext);
     }
     changePrev() {
-        this.reset2 ()
         this.reset ()
         if(this.counter > 0) {
             this.counter = this.counter - 1;
@@ -25,12 +24,10 @@ class Carousel {
             this.counter = this.slidesLength -1
           }
           this.slidesIndex = this.slides[this.counter];
-          this.reset2 ()
-          TweenMax.to(this.slidesIndex, 1, {opacity:1});
           this.slidesIndex.style.zIndex++
+          this.slidesIndex.style.opacity++
     }
     changeNext() {
-        this.reset2 ()
         this.reset ()
         if(this.counter < this.slidesLength - 1) {
             this.counter = this.counter + 1;
@@ -38,16 +35,13 @@ class Carousel {
             this.counter = 0;
           } 
           this.slidesIndex = this.slides[this.counter];
-          this.reset2 ()
-          TweenMax.to(this.slidesIndex, 1, {opacity:1});
           this.slidesIndex.style.zIndex++
+          this.slidesIndex.style.opacity++
     }
     reset () {
         this.slides.forEach(slide=>slide.style.zIndex = 0);
-       
-    }
-    reset2 () {
         this.slides.forEach(slide=>slide.style.opacity = 0);
+       
     }
 }
 

@@ -1,45 +1,57 @@
 .aboutUs{
     .BUILD(@aboutUsBG; @aboutUsHeight);
-    width: 65vw;
-    @media @mobile{height: 65vh;}
+    width: 95vw;
+    @media @tablet{width: 100vw;}
+    background: none;
+    @media @mobile{height: 80vh;}
     display: flex;
-    flex-direction: row-reverse;
-    @media @mobile{flex-direction: column}
     position: absolute;
-    .container{
-        width: 60vw;
-        overflow: auto;
-        @media @mobile{width: 100%;}
-        @media @mobile{height: 88vh;}
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
+    overflow: auto;
+    // .container{
+    //     width: 60vw;
+    //     overflow: auto;
+    //     @media @mobile{width: 100%;}
+    //     @media @mobile{height: 88vh;}
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding: 1%;
+    // }
+    // h2 {
+    //     font-size: 3em;
+    //     color: white;
+    //     padding: 1% 2%;
+    // }
+    // .split2{
+    //     width: 40vw;
+    //     height: auto;
+    //     @media @mobile{width: 100%;}
+    //     background: @aboutUsSplitBG;
+    // }
+    justify-content: center;
+    text-align: center;
+    .contents {
+        h2 {
+            padding: 1%;
+            color: white;
+            font-size: 3em;
+        }
+    }
+    img {
+        height: auto;
+        width: 50vh;
+        border-radius: 50%;
     }
     h2 {
-        font-size: 3em;
         color: white;
-        padding: 1% 2%;
+        font-size: 2.5em;
     }
-    ul {
-        padding: 1% 5%;
-        @media @mobile{padding-bottom: 25%;}
+    h3{
+        color: white;
+        font-size: 2em;
     }
-    li {
-        padding-left:7.5%;
-        list-style: none;
-        line-height: 1.25;
+    p {
+        color: white;
+        padding: 1%;
     }
-    .split1{
-        width: 100%;
-        @media @tablet{width: 70%;}
-        @media @mobile{padding-bottom: 33%;}
-        @media @mobile{overflow: auto;}
-        
-    }
-    .split2{
-        width: 40vw;
-        height: auto;
-        @media @mobile{width: 100%;}
-        background: @aboutUsSplitBG;
-    }
+
 }
