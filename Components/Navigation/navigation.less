@@ -1,18 +1,20 @@
 .navi {
     .BUILD(@navBG; @navHeight);
-    z-index: 3;
+    @media @mobile{height: 20vh;}
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     .naviContainer {
         display: flex;
+        @media @mobile{flex-direction: column;}
         justify-content: space-between;
         align-items: center;
-        // padding: 1%;
         div {
             height: 12vh;
             justify-content: flex-start;
+            @media @mobile{justify-content: center;}
             padding-left: 2.5%;
             display: flex;
             align-items: center;
@@ -21,12 +23,9 @@
         a {
             text-decoration: none;
         }
-        .logo {
-            width: 75px;
-            height: 75px;
-        }
         h1{
-           font-size: 3em;
+           font-size: 3vw;
+           @media @mobile{font-size: 8vw;}
            color: @navFC;
         }
         .buttons {
@@ -34,6 +33,7 @@
             justify-content: center;
             div{
                 display: flex;
+                @media @mobile{padding: 2% 0;}
                 justify-content: center;
                 width: 100%;
             }
@@ -51,22 +51,22 @@
 
 .sideNavi {
     background: @sideNaviBG;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 85vh;
+    @media @tablet{height:88vh;}
+    @media @mobile{height:80vh;}
     width: 5vw;
-    .test();
+    @media @tablet{width: 10vw;}
     padding-top: @navHeight;
+    @media @mobile{padding-top: 20vh;}
     padding-bottom: 5vh;
     position: fixed;
     right: 0;
     top: 0;
-    a {
-        text-decoration: none;
-    }
     h2 {
         color: @sideNaviFC;
         writing-mode: vertical-rl;

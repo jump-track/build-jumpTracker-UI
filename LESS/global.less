@@ -1,14 +1,44 @@
 
+html {
+    position: relative;
+    scroll-behavior: smooth;
+    background: rgba(228, 233, 237, 1);
+}
 body {
+    overflow: scroll;
+    overflow-x: hidden;
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+    position: absolute;
+    max-width: 1000px;
+    min-width: 100vw;
     width: 100%;
     height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    .container {
+    margin: 0 auto;
+    .tabs {
+        position: relative;
         width: 100vw;
-        height: auto;
-        .test();
+        height: 88vh;
+        @media @mobile{ height: 80vh;}
+        overflow: hidden;
+        margin-top: 12vh;
+        @media @mobile{margin-top: 20vh;}
     }
 }
+
+
+ @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  

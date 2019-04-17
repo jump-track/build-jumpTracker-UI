@@ -1,19 +1,29 @@
 .header {
     .BUILD(@headerBG; @headerHeight);
     width: 95vw;
+    @media @mobile{width:90vw;}
     overflow: auto;
+    position: absolute;
+    justify-content: center;
+    @media @mobile{justify-content: flex-start;}
+    display: flex;
+    flex-direction: column;
+    @media @tablet{padding: 5% 0;}
+    @media @tablet{height: 88vh;}
+    @media @mobile{height: 80vh;}
+    @media @mobile{padding: 10% 0;}
     div {
-        width: 100%;
-        column-count: 2;
-        column-fill: auto;
+        padding: 1%;
     }
     h2 {
-        font-size: 2em;
+        font-size: 3em;
         color: white;
-        padding: 5% 2%;
+        padding: 1% 2%;
     }
     p {
-        padding: 2% 5%;
+        width: 70%;
+        padding: 1% 5%;
         line-height: 1.5;
+        font-size: 1em;
     }
 }
