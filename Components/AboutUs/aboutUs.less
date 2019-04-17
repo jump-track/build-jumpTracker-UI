@@ -9,9 +9,11 @@
     .container{
         width: 60vw;
         overflow: auto;
-        padding-bottom: 5%;
         @media @mobile{width: 100%;}
         @media @mobile{height: 88vh;}
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
     h2 {
         font-size: 5vw;
@@ -29,7 +31,8 @@
     .split1{
         width: 100%;
         @media @mobile{height: 88vh;}
-        @media @mobile{width: 80%;}
+        @media @tablet{width: 70%;}
+        
     }
     .split2{
         width: 40vw;

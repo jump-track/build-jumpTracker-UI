@@ -136,6 +136,7 @@ body {
   overflow-x: hidden;
   position: absolute;
   max-width: 1000px;
+  min-width: 100vw;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -263,6 +264,16 @@ body .tabs {
 }
 @media (max-width: 800px) {
   .sideNavi {
+    height: 88vh;
+  }
+}
+@media (max-width: 600px) {
+  .sideNavi {
+    height: 80vh;
+  }
+}
+@media (max-width: 800px) {
+  .sideNavi {
     width: 10vw;
   }
 }
@@ -303,7 +314,7 @@ body .tabs {
   opacity: 0.9;
 }
 .boxLarge h2 {
-  font-size: 4vw;
+  font-size: 3em;
   color: #f15a22;
   padding-bottom: 2.5%;
 }
@@ -402,12 +413,45 @@ body .tabs {
   width: 95vw;
   overflow: auto;
   position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .header {
+    width: 90vw;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    padding: 5% 0;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    height: 88vh;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    height: 80vh;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 10% 0;
+  }
 }
 .header div {
   padding: 1%;
 }
 .header h2 {
-  font-size: 3vw;
+  font-size: 3em;
   color: white;
   padding: 1% 2%;
 }
@@ -425,18 +469,40 @@ body .tabs {
   display: flex;
   position: absolute;
 }
+@media (max-width: 800px) {
+  .content {
+    height: 88vh;
+  }
+}
+@media (max-width: 600px) {
+  .content {
+    height: 80vh;
+  }
+}
 .content .container {
   width: 60%;
   overflow: auto;
-  padding-bottom: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 600px) {
   .content .container {
     width: 70%;
   }
 }
+@media (max-width: 600px) {
+  .content .container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .content .container {
+    padding: 10% 0;
+  }
+}
 .content h2 {
-  font-size: 5vw;
+  font-size: 3vw;
   color: white;
   padding: 2%;
 }
@@ -492,10 +558,20 @@ body .tabs {
 }
 @media (max-width: 600px) {
   .cta {
-    height: 176vh;
+    width: 90vw;
+  }
+}
+@media (max-width: 800px) {
+  .cta {
+    height: 88vh;
   }
 }
 @media (max-width: 600px) {
+  .cta {
+    height: 80vh;
+  }
+}
+@media (max-width: 800px) {
   .cta {
     flex-direction: column;
   }
@@ -504,28 +580,55 @@ body .tabs {
 .cta h3,
 .cta h4 {
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 3.5em;
   color: white;
   padding: 2% 2%;
 }
 .cta h2 h3,
 .cta h3 h3,
 .cta h4 h3 {
-  font-size: a1 0.8em;
+  font-size: 1.8em;
 }
 .cta .container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   overflow: auto;
-  padding-bottom: 5%;
 }
 @media (max-width: 600px) {
+  .cta .container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 800px) {
   .cta .container {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .cta .container {
+    height: 44vh;
+  }
+}
 @media (max-width: 600px) {
   .cta .container {
-    height: 88vh;
+    height: 40vh;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container {
+    padding-top: 3%;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container {
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container div {
+    padding: 10%;
   }
 }
 .cta .container h3 {
@@ -536,23 +639,50 @@ body .tabs {
   padding: 5%;
 }
 .cta .container .button {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 .cta .container2 {
   width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   overflow: auto;
   background: #e8e8e8;
 }
 @media (max-width: 600px) {
   .cta .container2 {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container2 {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container2 {
+    height: 44vh;
   }
 }
 @media (max-width: 600px) {
   .cta .container2 {
-    height: 88vh;
+    height: 40vh;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container2 {
+    padding-top: 3%;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container2 {
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .cta .container2 div {
+    padding: 10%;
   }
 }
 .cta .container2 h3 {
@@ -565,13 +695,11 @@ body .tabs {
   text-align: left;
 }
 .cta .container2 p {
-  padding: 2% 5%;
+  padding: 5%;
 }
 .cta .container2 .button {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
 }
 .aboutUs {
   width: 100%;
@@ -595,7 +723,9 @@ body .tabs {
 .aboutUs .container {
   width: 60vw;
   overflow: auto;
-  padding-bottom: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 600px) {
   .aboutUs .container {
@@ -628,9 +758,9 @@ body .tabs {
     height: 88vh;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .aboutUs .split1 {
-    width: 80%;
+    width: 70%;
   }
 }
 .aboutUs .split2 {

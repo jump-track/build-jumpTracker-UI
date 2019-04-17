@@ -1,26 +1,37 @@
 .cta {
     .BUILD(@ctaBG; @ctaHeight);
     width: 95vw;
-    @media @mobile{height: 176vh;}
+    @media @mobile{width:90vw;}
+    @media @tablet{height: 88vh;}
+    @media @mobile{height: 80vh;}
     display: flex;
-    @media @mobile{flex-direction: column;}
+    @media @tablet{flex-direction: column;}
     position: absolute;
     overflow: auto;
     h2, h3, h4 {
         text-align: center;
-        font-size: 3.5vw;
+        font-size: 3.5em;
         color: white;
         padding: 2% 2%;
         h3{
-            font-size: a1.8em;
+            font-size: 1.8em;
         }
     }
     .container {
+        justify-content: center;
+        @media @mobile{justify-content: flex-start;}
+        display: flex;
+        flex-direction: column;
         width: 50%;
-        @media @mobile{width: 100%;}
-        @media @mobile{height: 88vh;}
+        @media @tablet{width: 100%;}
+        @media @tablet{height: 44vh;}
+        @media @mobile{height: 40vh;}
+        @media @tablet{padding-top:3%;}
+        @media @tablet{padding-bottom: 5%;}
         overflow: auto;
-        padding-bottom: 5%;
+        div{
+            @media @tablet{padding: 10%;}
+        }
         h3{
             font-size: 1.5em;
             text-align: center;
@@ -29,17 +40,26 @@
             padding: 5%;
         }
         .button {
-            width: 100%;
             display: flex;
             justify-content: center;
         }
     }
     .container2 {
         width: 50%;
-        @media @mobile{width: 100%;}
-        @media @mobile{height: 88vh;}
+        justify-content: center;
+        @media @mobile{justify-content: flex-start;}
+        display: flex;
+        flex-direction: column;
+        @media @tablet{width: 100%;}
+        @media @tablet{height: 44vh;}
+        @media @mobile{height: 40vh;}
         overflow: auto;
+        @media @tablet{padding-top:3%;}
+        @media @tablet{padding-bottom: 5%;}
         background: @mercury;
+        div{
+            @media @tablet{padding: 10%;}
+        }
         h3{
             font-size: 1.5em;
             text-align: center;
@@ -50,13 +70,11 @@
             text-align: left
         }
         p{
-            padding: 2% 5%;
+            padding: 5%;
         }
         .button {
-            width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 10%;
         }
     }
 }
