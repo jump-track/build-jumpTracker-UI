@@ -54,22 +54,28 @@
     z-index: 4;
     display: flex;
     flex-direction: column;
+    @media @tablet{flex-direction: row;}
+
     align-items: center;
     justify-content: space-around;
     height: 85vh;
-    @media @tablet{height:88vh;}
-    @media @mobile{height:80vh;}
+    @media @tablet{height:12vh;}
     width: 5vw;
-    @media @tablet{width: 10vw;}
+    @media @tablet{width: 100vw;}
     padding-top: @navHeight;
-    @media @mobile{padding-top: 20vh;}
+    @media @tablet{padding: 0;}
     padding-bottom: 5vh;
     position: fixed;
     right: 0;
+    @media @tablet{right: initial;}
     top: 0;
+    @media @tablet{top: initial;}
+    @media @tablet{bottom: 0;}
     h2 {
         color: @sideNaviFC;
         writing-mode: vertical-rl;
+        @media @tablet{writing-mode: initial;}
+
     }
     .hamburger {
         writing-mode: horizontal-tb;

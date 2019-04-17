@@ -1,11 +1,11 @@
-.cta {
-    height: @ctaHeight;
-    @media @mobile{height: 65vh;}
+.cta2 {
+    height: @cta2Height;
     width: 65vw;
     display: flex;
-    @media @tablet{flex-direction: column;}
+    @media @mobile{height: 65vh;}
     position: absolute;
     overflow: auto;
+   
     h2, h3, h4 {
         text-align: center;
         font-size: 3.5em;
@@ -15,12 +15,10 @@
             font-size: 1.8em;
         }
     }
-    .container {
+    .container2 {
+        background: @cta2BG;
         display: flex;
         position: absolute;
-        background: @ctaBG;
-        width: 65vw;
-        height: 75vh;
         flex-direction: column;
         overflow: auto;
         div{
