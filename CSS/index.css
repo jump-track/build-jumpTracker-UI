@@ -135,13 +135,13 @@ body {
   overflow-x: hidden;
   position: absolute;
   max-width: 1000px;
-  min-width: 320px;
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
 body .bgImageHolder {
   overflow: hidden;
+  overflow-x: hidden;
 }
 body .bgImageHolder .bgImage {
   background-image: url('/Assets/img/bg2.jpg');
@@ -153,6 +153,11 @@ body .bgImageHolder .bgImage {
   animation-duration: 30s;
   animation-iteration-count: infinite;
   z-index: 0;
+}
+@media (max-width: 800px) {
+  body .bgImageHolder .bgImage {
+    animation-iteration-count: 0;
+  }
 }
 body ::-webkit-scrollbar {
   width: 0px;
@@ -282,6 +287,11 @@ body .tabs {
   height: 5vh;
   margin: 0 2%;
 }
+@media (max-width: 600px) {
+  .navi .naviContainer .menu {
+    width: 20vw;
+  }
+}
 .sideNavi {
   background: #6c7a89;
   z-index: 4;
@@ -310,6 +320,16 @@ body .tabs {
 @media (max-width: 800px) {
   .sideNavi {
     width: 100vw;
+  }
+}
+@media (max-width: 600px) {
+  .sideNavi {
+    width: 98vw;
+  }
+}
+@media (max-width: 400px) {
+  .sideNavi {
+    width: 96vw;
   }
 }
 @media (max-width: 800px) {
@@ -343,7 +363,7 @@ body .tabs {
 }
 @media (max-width: 600px) {
   .sideNavi h2 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 }
 .sideNavi .hamburger {
@@ -440,9 +460,29 @@ body .tabs {
   top: 50%;
   left: 10vw;
 }
+@media (max-width: 800px) {
+  .carousel .left-button {
+    top: 30vh;
+  }
+}
+@media (max-width: 600px) {
+  .carousel .left-button {
+    top: 18vh;
+  }
+}
 .carousel .right-button {
   top: 50%;
   right: 10vw;
+}
+@media (max-width: 800px) {
+  .carousel .right-button {
+    top: 30vh;
+  }
+}
+@media (max-width: 600px) {
+  .carousel .right-button {
+    top: 18vh;
+  }
 }
 .carousel .carousel-content {
   position: absolute;
@@ -602,12 +642,12 @@ body .tabs {
   position: absolute;
   overflow: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cta {
     height: 65vh;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cta {
     width: 80vw;
   }
@@ -667,12 +707,12 @@ body .tabs {
   position: absolute;
   overflow: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cta2 {
     width: 80vw;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .cta2 {
     height: 65vh;
   }
@@ -744,6 +784,11 @@ body .tabs {
   height: auto;
   width: 50vh;
   border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .aboutUs img {
+    width: 25vh;
+  }
 }
 .aboutUs h2 {
   color: white;
