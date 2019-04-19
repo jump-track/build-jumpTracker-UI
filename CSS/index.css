@@ -319,11 +319,6 @@ body .tabs {
     width: 98vw;
   }
 }
-@media (max-width: 400px) {
-  .sideNavi {
-    width: 96vw;
-  }
-}
 @media (max-width: 800px) {
   .sideNavi {
     padding: 0;
