@@ -1,52 +1,90 @@
 .navi {
-    .BUILD(@navBG; @navHeight);
-    @media @mobile{height: 20vh;}
+    .BUILD(@navBG;
+    @navHeight);
+
+    @media @mobile {
+        height: 20vh;
+    }
+
     z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+
     .naviContainer {
         display: flex;
-        @media @mobile{flex-direction: column;}
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
         justify-content: space-between;
         align-items: center;
+
         div {
             height: 12vh;
             justify-content: flex-start;
-            @media @mobile{justify-content: center;}
+
+            @media @mobile {
+                justify-content: center;
+            }
+
             padding-left: 2.5%;
             display: flex;
             align-items: center;
             width: 100%;
         }
+
         a {
+
             text-decoration: none;
             cursor: initial;
         }
-        h1{
-           font-size: 3vw;
-           @media @mobile{font-size: 8vw;}
-           color: @navFC;
+
+        h1 {
+            font-size: 3vw;
+
+            @media @mobile {
+                font-size: 8vw;
+            }
+
+            color: @navFC;
+            padding-left: 2vw;
+
+            @media @mobile {
+                padding-left: 0;
+            }
         }
+
         .buttons {
             display: flex;
             justify-content: center;
-            div{
+            padding-right: 5%;
+
+            div {
                 display: flex;
-                @media @mobile{padding: 2% 0;}
+
+                @media @mobile {
+                    padding: 2% 0;
+                }
+
                 justify-content: center;
                 width: 100%;
             }
+
             height: 5vh;
-            padding: 0 5%;
             width: 50%;
         }
+
         .menu {
-            width: 150px;
-            @media @mobile{width: 20vw;}
+            width: 10vw;
+
+            @media @mobile {
+                width: 20vw;
+            }
+
             height: 5vh;
-            margin: 0 2%;
         }
     }
 }
@@ -56,37 +94,96 @@
     z-index: 4;
     display: flex;
     flex-direction: column;
-    @media @tablet{flex-direction: row;}
+
+    @media @tablet {
+        flex-direction: row;
+    }
 
     align-items: center;
+
+    @media @tablet {
+        align-items: initial;
+    }
+
+    @media @tablet {
+        padding-top: 2vh;
+    }
+
     justify-content: space-around;
     height: 85vh;
-    @media @tablet{height:12vh;}
+
+    @media @tablet {
+        height: 12vh;
+    }
+
     width: 5vw;
-    @media @tablet{width: 100vw;}
-    @media @mobile{width: 98vw;}
+
+    @media @tablet {
+        width: 100vw;
+    }
+
     padding-top: @navHeight;
     padding-bottom: 5vh;
-    @media @tablet{padding: 0;}
+
+    @media @tablet {
+        padding: 0;
+    }
+
     position: fixed;
     right: 0;
-    @media @tablet{right: initial;}
+
+    @media @tablet {
+        right: initial;
+    }
+
     top: 0;
-    @media @tablet{top: initial;}
-    @media @tablet{bottom: 0;}
+
+    @media @tablet {
+        top: initial;
+    }
+
+    @media @tablet {
+        bottom: 0;
+    }
+
     h2 {
         color: @sideNaviFC;
         writing-mode: vertical-rl;
-        @media @tablet{writing-mode: initial;}
-        @media @mobile{font-size: 3vw;}
+
+        @media @tablet {
+            writing-mode: initial;
+        }
+
+        @media @mobile {
+            font-size: 3vw;
+        }
+
+        @media @tablet {
+            padding-top: 1vh;
+        }
+
+        font-weight: bold;
 
     }
+
     .hamburger {
         writing-mode: horizontal-tb;
+
         .logo {
             width: 6vh;
             height: auto;
+            animation-name: shake-vertical;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+            @media @tablet {
+                animation-iteration-count: 0;
+            }
         }
-       
+
     }
+}
+
+.tabs-link:last-child {
+    padding-right: 5%;
 }
