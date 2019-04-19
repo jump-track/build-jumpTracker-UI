@@ -1,37 +1,62 @@
 .cta2 {
     height: @cta2Height;
     width: 65vw;
-    @media @tablet{width: 80vw;}
+
+    @media @tablet {
+        width: 80vw;
+    }
+
     display: flex;
-    @media @tablet{height: 65vh;}
+
+    @media @tablet {
+        height: 65vh;
+    }
+
     position: absolute;
     overflow: auto;
-   
-    h2, h3, h4 {
+
+    h2,
+    h3,
+    h4 {
         text-align: center;
         font-size: 3.5em;
         color: white;
         padding: 2% 2%;
-        h3{
+
+        h3 {
             font-size: 1.8em;
         }
     }
+
     .container2 {
         background: @cta2BG;
         display: flex;
+        width: 65vw;
+
+        @media @tablet {
+            width: 80vw;
+        }
+
         position: absolute;
         flex-direction: column;
         overflow: auto;
-        div{
-            @media @tablet{padding: 10%;}
+        padding-bottom: 5%;
+
+        div {
+            @media @tablet {
+                padding: 10%;
+            }
         }
-        h3{
+
+        h3 {
             font-size: 1.5em;
             text-align: center;
         }
-        p{
+
+        p {
             padding: 5%;
         }
+
         .button {
             display: flex;
             justify-content: center;

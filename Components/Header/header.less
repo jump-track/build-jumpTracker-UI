@@ -1,26 +1,43 @@
 .header {
-    .BUILD(@headerBG; @headerHeight);
+    .BUILD(@headerBG;
+    @headerHeight);
     width: 65vw;
     overflow: auto;
     position: absolute;
-    @media @mobile{justify-content: flex-start;}
-    @media @mobile{height: 65vh;}
-    @media @tablet{width: 80vw;}
+
+    @media @mobile {
+        justify-content: flex-start;
+    }
+
+    @media @mobile {
+        height: 65vh;
+    }
+
+    @media @tablet {
+        width: 80vw;
+    }
+
     display: flex;
     flex-direction: column;
+
     div {
         padding: 1%;
     }
+
     h2 {
         font-size: 3em;
         color: white;
         padding: 1% 2%;
     }
+
     p {
         width: 70%;
         padding: 1% 5%;
         line-height: 1.5;
         font-size: 1em;
-        @media @mobile{padding-bottom: 25%;}
+
+        @media @mobile {
+            padding-bottom: 25%;
+        }
     }
 }

@@ -1,35 +1,57 @@
 .carousel {
-    position: relative;
-    width: 100%;
-    overflow: auto;
-    padding-bottom: 20vh;
-    height: 80vh;
-    .left-button, .right-button {
-      position: absolute;
-      color: white;
-      img {
-        width: 5vw;
-        @media @mobile{width: 12vw;}
-        height: auto;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 20vh;
+  height: 80vh;
+
+  .left-button,
+  .right-button {
+    position: absolute;
+    color: white;
+
+    img {
+      width: 5vw;
+
+      @media @mobile {
+        width: 12vw;
       }
-      
-      cursor: pointer;
+
+      height: auto;
     }
-    .left-button {
-      @media @tablet{top: 30vh;}
-      @media @mobile{top: 18vh;}
-      top: 50%; 
-      left: 10vw;
-    }
-    .right-button {
-      @media @tablet{top: 30vh;}
-      @media @mobile{top: 18vh;}
-      top: 50%; 
-      right: 10vw;
-    }
-    .carousel-content {
-      position: absolute;
-      width: 100%;
-      text-align: center;
-    }
+
+    cursor: pointer;
   }
+
+  .left-button {
+    @media @tablet {
+      top: 30vh;
+    }
+
+    @media @mobile {
+      top: 18vh;
+    }
+
+    top: 50%;
+    left: 10vw;
+  }
+
+  .right-button {
+    @media @tablet {
+      top: 30vh;
+    }
+
+    @media @mobile {
+      top: 18vh;
+    }
+
+    top: 50%;
+    right: 10vw;
+  }
+
+  .carousel-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+}
